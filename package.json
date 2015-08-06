@@ -1,7 +1,7 @@
 {
   "name": "ember-ika-layouts",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "emberbr的布局组建",
   "directories": {
     "doc": "doc",
     "test": "tests"
