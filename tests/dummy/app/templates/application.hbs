@@ -1,7 +1,23 @@
-  <nav>
-    <ul>
-      <li>{{#link-to 'gettingStarted'}}getting started{{/link-to}}</li>
-      <li>{{#link-to 'main'}}main{{/link-to}}</li>
-    </ul>
-  </nav>
-{{outlet}}
+{{#em-container}}
+  {{#em-row}}
+    {{#em-col}}
+    <h1>Ember-Layouts</h1>
+    {{/em-col}}
+  {{/em-row}}
+  {{#em-row}}
+    {{#em-col col=12}}
+    <h2>说明</h2>
+    <p>ember-layouts基于ember实现了bootstrap的珊格系统， 主要包括em-container、em-row、em-col三个组件</p>
+
+    <h3>em-container</h3>
+    <p>\{{em-container}}定义一个容器, 默认是一个基于固定宽度的容器, 如果设置isFluid为true，\{{em-container isFluid=true}}则是一个宽度为100%的容器。</p>
+    <h3>em-row</h3>
+    <p>\{{em-row}}定义一行, 行必须包含在\{{em-container}}内</p>
+    <h3>em-col</h3>
+    <p>\{{em-col}}定义列, 列必须在\{{em-row}}内，具体的内容应当放在列内。</p>
+    <p>col属性代表所占珊格的列数</p>
+    <p>offset属性代表偏移列数</p>
+    <p>pull与push属性可以改变列的顺序</p>
+    {{/em-col}}
+  {{/em-row}}
+{{/em-container}}
