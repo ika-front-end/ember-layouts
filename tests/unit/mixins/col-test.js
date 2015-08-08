@@ -16,5 +16,5 @@ test('set col', function(assert) {
     c.append();
     c.set('col', 2);
   });
-  assert.ok(c.$().hasClass('col-xs-2'));
+  assert.ok(c.$().hasClass('col-md-2'));
 });

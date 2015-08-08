@@ -5,6 +5,6 @@ export default Em.Mixin.create({
   classNameBindings: ['colClass'],
   colClass: Em.computed('col' ,function(){
     var col = this.get('col') || 4;
-    return 'col-xs-' + col;
+    return 'col-md-' + col;
   })
 });
