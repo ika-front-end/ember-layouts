@@ -16,5 +16,6 @@ var app = new EmberAddon();
 //app.import(app.bowerDirectory + '/moment/locale/de-at.js');
 //app.import(app.bowerDirectory + '/pikaday/pikaday.js');
 //app.import(app.bowerDirectory + '/pikaday/css/pikaday.css');
+app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
 
 module.exports = app.toTree();
